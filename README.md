@@ -1,121 +1,165 @@
-🧪 SwiftTranslator Automation Testing
+Got it 👍 Here is your **README.md file content** — clean and ready to upload.
 
-IT3040 – Software Quality Assurance Assignment
+---
 
-This project contains automated test scripts developed using Playwright to test the SwiftTranslator (Singlish → Sinhala Translator) web application.
+# 🧪 SwiftTranslator Automation Testing
 
-🔗 Application Under Test: https://www.swifttranslator.com/
+**IT3040 – Software Quality Assurance Assignment**
 
-📌 Project Objective
+This project contains automated test scripts created using **Playwright** to test the **SwiftTranslator (Singlish → Sinhala Translator)** web application.
 
-The goal of this assignment is to:
+🔗 **Application Under Test:** [https://www.swifttranslator.com/](https://www.swifttranslator.com/)
 
-Automate functional and UI test scenarios
+---
 
-Validate Singlish to Sinhala translation accuracy
+## 📌 Project Objective
 
-Identify system behavior under both valid and invalid inputs
+The purpose of this assignment is to:
 
-Practice real-world test automation using Playwright
+* Automate functional and UI test scenarios
+* Verify the accuracy of Singlish to Sinhala translations
+* Test system behavior with both valid and invalid inputs
+* Apply real-world software test automation practices
 
-🛠 Technologies Used
-Tool	Purpose
-Playwright	Browser automation framework
-TypeScript	Test scripting language
-Node.js	Runtime environment
-GitHub	Version control & submission
-📂 Project Structure
+---
+
+## 🛠 Technologies Used
+
+| Technology     | Purpose                                |
+| -------------- | -------------------------------------- |
+| **Playwright** | End-to-end browser automation          |
+| **TypeScript** | Test scripting language                |
+| **Node.js**    | Runtime environment                    |
+| **GitHub**     | Version control and project submission |
+
+---
+
+## 📂 Project Structure
+
+```
 📁 tests/
-   └── singlish-to-sinhala.spec.ts   # All automated test cases
+   └── singlish-to-sinhala.spec.ts   # Contains all automated test cases
 
-📁 playwright-report/                # HTML test reports (ignored in Git)
-📁 test-results/                     # Test artifacts (ignored)
-📄 playwright.config.ts              # Playwright configuration
-📄 package.json                      # Project dependencies
+📁 playwright-report/                # HTML reports (ignored in GitHub)
+📁 test-results/                     # Execution artifacts (ignored)
+📁 blob-report/                      # Blob reports (ignored)
+
+📄 playwright.config.ts              # Playwright configuration file
+📄 package.json                      # Project dependencies and scripts
 📄 README.md                         # Project documentation
+```
 
-✅ Test Coverage
+---
 
-Total Test Scenarios: 35
+## ✅ Test Coverage
 
-Category	Count	Description
-Positive Functional	24	Valid Singlish sentences translated correctly
-Negative Functional	10	Edge cases, slang, typos, complex inputs
-UI Test	1	Clear button functionality
-▶️ How to Run the Tests
-1️⃣ Install Dependencies
+Total Test Scenarios: **35**
+
+| Category                  | Count | Description                                   |
+| ------------------------- | ----- | --------------------------------------------- |
+| Positive Functional Tests | 24    | Valid Singlish sentences translated correctly |
+| Negative Functional Tests | 10    | Edge cases, slang, typos, and complex inputs  |
+| UI Test                   | 1     | Clear button functionality                    |
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Dependencies
+
+```bash
 npm install
+```
 
-2️⃣ Install Playwright Browsers
+### 2️⃣ Install Playwright Browsers
+
+```bash
 npx playwright install
+```
 
-3️⃣ Run All Tests
+### 3️⃣ Run All Tests
+
+```bash
 npx playwright test
+```
 
-4️⃣ View HTML Report
+### 4️⃣ View the HTML Test Report
+
+```bash
 npx playwright show-report
+```
 
-🧠 Test Strategy
-✔ Positive Tests
+---
 
-Verify correct Sinhala output for:
+## 🧠 Test Strategy
 
-Normal sentences
+### ✔ Positive Tests
 
-Questions
+These verify correct Sinhala translations for:
 
-Mixed Sinhala + English
+* Normal conversational sentences
+* Questions
+* Mixed Sinhala + English words
+* Numbers, currency, and time expressions
 
-Numbers, currency, and time
+### ❌ Negative Tests
 
-❌ Negative Tests
+These evaluate system robustness using:
 
-Check system robustness with:
+* Typographical errors
+* Long words without spaces
+* Slang and informal language
+* Mixed punctuation
+* Poor grammar inputs
 
-Typos
+### 🖥 UI Test
 
-Long joined words
+The UI test ensures that the **Clear Button**:
 
-Slang and informal text
+* Empties the Singlish input field
+* Clears the Sinhala output panel
 
-Mixed punctuation
+---
 
-Grammar issues
+## 📋 Key Implementation Details
 
-🖥 UI Test
+* Real-time translation validation is used
+* Sinhala output is captured directly from the translation panel
+* Actual outputs are logged into Playwright reports for documentation
+* Test cases are dynamically generated using structured test data
 
-Ensures the Clear Button:
+---
 
-Clears the Singlish input field
+## 🚫 Ignored Files in GitHub
 
-Clears the Sinhala output panel
+The following directories are excluded from version control:
 
-📋 Key Implementation Details
-
-Tests use real-time translation validation
-
-Output is captured from the Sinhala translation panel
-
-Actual outputs are logged in Playwright reports for assignment documentation
-
-Dynamic test generation is done using a test data array
-
-🚫 Ignored Files
-
-The following folders are excluded from GitHub:
-
+```
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-/playwright/.auth/
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+playwright/.auth/
+```
 
+These folders contain dependencies and auto-generated test artifacts.
 
-These contain dependencies and auto-generated test artifacts.
+---
 
-👨‍🎓 Author
+## 👨‍🎓 Author
 
-Student Name: Dilshan
-Module: IT3040 – Software Quality Assurance
-Assignment: Test Automation with Playwright
+**Name:** Dilshan
+**Module:** IT3040 – Software Quality Assurance
+**Assignment:** Playwright Test Automation Project
+
+---
+
+## 📎 Notes
+
+* Some negative test cases may fail intentionally to demonstrate system limitations.
+* Test execution results should be documented in the assignment report.
+
+---
+
+💡 *This project demonstrates practical skills in automated testing, locator strategies, real-time validation, and structured test design using Playwright.*
