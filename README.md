@@ -1,6 +1,3 @@
-Got it 👍 Here is your **README.md file content** — clean and ready to upload.
-
----
 
 # 🧪 SwiftTranslator Automation Testing
 
@@ -149,17 +146,9 @@ These folders contain dependencies and auto-generated test artifacts.
 
 ## 👨‍🎓 Author
 
-**Name:** Dilshan
+**Name:** H.M.S.P. Karunathilaka
 **Module:** IT3040 – Software Quality Assurance
 **Assignment:** Playwright Test Automation Project
 
 ---
 
-## 📎 Notes
-
-* Some negative test cases may fail intentionally to demonstrate system limitations.
-* Test execution results should be documented in the assignment report.
-
----
-
-💡 *This project demonstrates practical skills in automated testing, locator strategies, real-time validation, and structured test design using Playwright.*
